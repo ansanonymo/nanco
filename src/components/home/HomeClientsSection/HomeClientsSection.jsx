@@ -1,8 +1,8 @@
+import Title from "../../common/Title";
 import Client2 from "./../../../asset/clients/client-2.png";
 import Client3 from "./../../../asset/clients/client-3.jpg";
 import Client4 from "./../../../asset/clients/client-4.png";
 import Client5 from "./../../../asset/clients/client-5.jpeg";
-import Title from "./../../common/Title";
 import style from "./logos.module.css";
 
 const images = [Client2, Client3, Client4, Client5, Client2, Client4];
