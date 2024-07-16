@@ -5,7 +5,7 @@
 import { IoMenuOutline } from "react-icons/io5";
 import Logo from "./../../asset/nanco-logo.png";
 
-import Drawer from "rc-drawer";
+import { Drawer, Menu } from "antd";
 import React, { useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
@@ -59,10 +59,10 @@ const Nav = () => {
     setOpen(false);
   };
   return (
-    <div className="fixed z-50 w-full">
-      <div className="lg:block container text-white">
-        <div className="max-w-7xl mx-auto flex flex-row justify-between items-center p-5 relative">
-          <div className="w-[80px]">
+    <div className="relative z-50 w-full">
+      <div className="lg:block container  text-white">
+        <div className="max-w-7xl mx-auto flex flex-row justify-between items-center p-3 relative">
+          <div className="w-[60px]">
             <img src={Logo} className="w-full" />
           </div>
           <div className="hidden lg:block">
@@ -71,16 +71,48 @@ const Nav = () => {
           <div className="lg:hidden block" onClick={showDrawer}>
             <IoMenuOutline className="text-5xl cursor-pointer" />
           </div>
-          <Drawer title="Basic Drawer" onClose={onClose} open={open}>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
+          <Drawer title="MENU" onClose={onClose} open={open}>
+            <DrawerItem links={menu} />
           </Drawer>
         </div>
       </div>
     </div>
   );
 };
+
+function DrawerItem({ links }) {
+  const items = links.map((link) => {
+    if (link.subItem) {
+      const entries = Object.entries(link.subItem);
+
+      return {
+        key: crypto.randomUUID(),
+        label: <span className="text-primary">{link.item}</span>,
+        children: entries.map(([name, link]) => {
+          return {
+            key: crypto.randomUUID(),
+            label: <a href={link}>{name}</a>,
+          };
+        }),
+      };
+    }
+
+    return {
+      key: crypto.randomUUID(),
+      label: <a href={link.link}>{link.item}</a>,
+    };
+  });
+
+  return (
+    <Menu
+      style={{
+        width: "100%",
+      }}
+      mode="inline"
+      items={items}
+    />
+  );
+}
 
 function ULList({ data }) {
   return (

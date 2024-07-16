@@ -1,11 +1,15 @@
-import Nav from "../components/common/Nav";
 import Hero from "../components/home/Hero/Hero";
+import HomeClientsSection from "../components/home/clients/HomeClientsSection";
+import HomeServices from "../components/home/services/HomeServices";
+import ProjectCouter from "../components/projectCounter/ProjectCounter";
 
 export default function Home() {
   return (
     <>
-      <Nav />
       <Hero />
+      <ProjectCouter />
+      <HomeClientsSection />
+      <HomeServices />
     </>
   );
 }

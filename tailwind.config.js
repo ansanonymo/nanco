@@ -7,6 +7,7 @@ export default {
       colors: {
         primary: "#078093",
         secondary: "#e4740e",
+        muted: "#808080",
       },
     },
   },
