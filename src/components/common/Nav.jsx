@@ -44,6 +44,7 @@ const menu = [
       "BOARD OF DIRECTORS": "#",
       "SENIOR LEADERSHIP": "#",
     },
+    direction: "right",
   },
   {
     item: "CONTACT US",
@@ -130,7 +131,11 @@ function DrawerItem({ links }) {
 
     return {
       key: crypto.randomUUID(),
-      label: <a href={link.link}>{link.item}</a>,
+      label: (
+        <a className="text-primary" href={link.link}>
+          {link.item}
+        </a>
+      ),
     };
   });
 
@@ -172,25 +177,32 @@ function ListItem({ item }) {
         <span className="text-l cursor-pointer">{item.item}</span>
         <RiArrowDropDownLine className="text-2 cursor-pointer" />
       </span>
-      <DropDownMenu subItem={item.subItem} />
+      <DropDownMenu subItem={item.subItem} direction={item.direction} />
     </li>
   );
 }
 
-function DropDownMenu({ subItem }) {
+function DropDownMenu({ subItem, direction = "left" }) {
   const links = Object.entries(subItem);
   return (
-    <div className="absolute shadow-xl hover:opacity-1 opacity-0 translate-y-14 h-0 overflow-hidden group-hover:h-auto group-hover:overflow-visible group-hover:block ease-linear group-hover:opacity-100 group-hover:translate-y-7 hover:translate-y-7 transition md:absolute top-0 left-0 bg-white text-black md:shadow-lg md:rounded-md z-50 hover:delay-700">
-      <ul className="p-8 w-72 flex flex-col gap-2 hover:delay-300">
+    <div
+      className={`absolute shadow-xl hover:opacity-1 opacity-0 translate-y-14 h-0 overflow-hidden group-hover:h-auto group-hover:overflow-visible group-hover:block ease-linear group-hover:opacity-100 group-hover:translate-y-7 hover:translate-y-7 transition md:absolute top-0 bg-white text-black md:shadow-lg md:rounded-md z-50  ${
+        direction === "left" ? "left-0" : "right-0"
+      }`}
+    >
+      <ul className="p-8 w-96 flex flex-col gap-2 hover:delay-300">
         {links.map(([name, link]) => {
           return (
             <li
               key={crypto.randomUUID()}
-              className="hover:translate-x-1 transition-all duration-700"
+              className="hover:translate-x-1 transition-all duration-700 flex justify-between items-center"
             >
-              <a href={link}>
-                {name} {">"}
+              <a className="hover:text-primary" href={link}>
+                {name}
               </a>
+              <span>
+                <RiArrowDropDownLine className=" -rotate-90" />
+              </span>
             </li>
           );
         })}

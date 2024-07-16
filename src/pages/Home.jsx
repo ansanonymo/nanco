@@ -1,6 +1,6 @@
 import Hero from "../components/home/Hero/Hero";
 import HomeClientsSection from "../components/home/clients/HomeClientsSection";
-import HomeServices from "../components/home/services/HomeServices";
+import HomeServicesSection from "../components/home/services/HomeServicesSection";
 import ProjectCouter from "../components/projectCounter/ProjectCounter";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
       <ProjectCouter />
       <HomeClientsSection />
-      <HomeServices />
+      <HomeServicesSection />
     </>
   );
 }

@@ -14,7 +14,9 @@ export default function HomeClientsSection() {
       <Title>Our Clients</Title>
       <div
         className={
-          "my-5 whitespace-nowrap overflow-hidden" + " " + logocontainer
+          "my-5 whitespace-nowrap overflow-hidden container" +
+          " " +
+          logocontainer
         }
       >
         <ImgSlide allImage={images} />
