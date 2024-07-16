@@ -3,10 +3,11 @@
 // import { DownOutlined } from "@ant-design/icons";
 // import { Dropdown, Space } from "antd";
 import { IoMenuOutline } from "react-icons/io5";
-import Logo from "./../../asset/nanco-logo.png";
+import LogoBlack from "./../../asset/nanco-logo-black.png";
+import LogoWhite from "./../../asset/nanco-logo-white.png";
 
 import { Drawer, Menu } from "antd";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 const menu = [
@@ -52,18 +53,48 @@ const menu = [
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
+  const [logo, setLogo] = useState("white");
+  const [isDown, setIsDown] = useState(false);
+  const navRaf = useRef(null);
   const showDrawer = () => {
     setOpen(true);
   };
   const onClose = () => {
     setOpen(false);
   };
+
+  useEffect(() => {
+    const nav = navRaf.current;
+
+    const listener = window.addEventListener("scroll", (e) => {
+      if (window.scrollY > 340) {
+        setLogo("black");
+        setIsDown(true);
+      } else {
+        setLogo("white");
+        setIsDown(false);
+      }
+    });
+
+    return () => {
+      removeEventListener("scroll", listener);
+    };
+  }, []);
+
+  const relativeCss =
+    "transition-all duration-500 transition relative z-50 w-full text-white";
+  const fixedCss =
+    "transition-all duration-500 fixed bg-white text-black z-50 w-full shadow-xl";
+
   return (
-    <div className="relative z-50 w-full">
-      <div className="lg:block container  text-white">
+    <div ref={navRaf} className={isDown ? fixedCss : relativeCss}>
+      <div className="lg:block py-2 container">
         <div className="max-w-7xl mx-auto flex flex-row justify-between items-center p-3 relative">
           <div className="w-[60px]">
-            <img src={Logo} className="w-full" />
+            <img
+              src={logo === "white" ? LogoWhite : LogoBlack}
+              className="w-full"
+            />
           </div>
           <div className="hidden lg:block">
             <ULList data={menu} />

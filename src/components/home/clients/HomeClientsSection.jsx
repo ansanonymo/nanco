@@ -9,7 +9,6 @@ const images = [Client2, Client3, Client4, Client5, Client2, Client4];
 
 const { logodiv, logocontainer } = style;
 export default function HomeClientsSection() {
-  console.log(logodiv, logocontainer);
   return (
     <div>
       <Title>Our Clients</Title>
