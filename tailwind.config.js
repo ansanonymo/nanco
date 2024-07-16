@@ -9,6 +9,7 @@ export default {
         secondary: "#e4740e",
         darkShade: "#808080",
       },
+      
     },
   },
   plugins: [],
