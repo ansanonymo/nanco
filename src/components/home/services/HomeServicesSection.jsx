@@ -1,5 +1,5 @@
 import { LiaCitySolid } from "react-icons/lia";
-import Title from "../../common/Title";
+import Title from "../../common/Title/Title";
 
 export default function HomeServicesSection() {
   return (

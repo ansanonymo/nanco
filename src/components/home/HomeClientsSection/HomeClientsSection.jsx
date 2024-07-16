@@ -1,4 +1,4 @@
-import Title from "../../common/Title";
+import Title from "../../common/Title/Title";
 import Client2 from "./../../../asset/clients/client-2.png";
 import Client3 from "./../../../asset/clients/client-3.jpg";
 import Client4 from "./../../../asset/clients/client-4.png";

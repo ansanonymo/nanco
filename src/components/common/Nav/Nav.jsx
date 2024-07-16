@@ -3,8 +3,8 @@
 // import { DownOutlined } from "@ant-design/icons";
 // import { Dropdown, Space } from "antd";
 import { IoMenuOutline } from "react-icons/io5";
-import LogoBlack from "./../../asset/nanco-logo-black.png";
-import LogoWhite from "./../../asset/nanco-logo-white.png";
+import LogoBlack from "./../../../asset/nanco-logo-black.png";
+import LogoWhite from "./../../../asset/nanco-logo-white.png";
 
 import { Drawer, Menu } from "antd";
 import React, { useEffect, useRef, useState } from "react";

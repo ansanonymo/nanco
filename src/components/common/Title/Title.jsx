@@ -1,4 +1,4 @@
-import LineImage from "./../../asset/lines/line.webp";
+import LineImage from "./../../../asset/lines/line.webp";
 export default function Title({ children }) {
   let words = children;
   if (!children || !children.trim() || words.split(" ").length !== 2) {

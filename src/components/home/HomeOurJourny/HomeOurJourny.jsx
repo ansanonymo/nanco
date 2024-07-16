@@ -1,14 +1,12 @@
 import React from "react";
+import Title from "./../../common/Title/Title";
 import Journy from "./Journy";
 
 export default function OurJourny() {
   return (
-    <div className="w-full py-10">
-      {/* <Title
-                first={"Our"}
-                last={"Journy"}
-            /> */}
-      <div className="container">
+    <div className="w-full">
+      <Title>Our Journey</Title>
+      <div className="container -mt-14">
         <Journy
           side={"left"}
           title={"1975"}

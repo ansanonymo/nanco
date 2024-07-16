@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../../common/Title";
+import Title from "../../common/Title/Title";
 import ImageContainer from "./ImageContainer";
 
 export default function HomeProjects() {

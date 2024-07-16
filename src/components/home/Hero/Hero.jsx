@@ -1,5 +1,5 @@
 import "swiper/css";
-import Nav from "../../common/Nav";
+import Nav from "../../common/Nav/Nav";
 import SlideImageTwo from "./../../../asset/slide/slide-1.webp";
 import SlideImageThree from "./../../../asset/slide/slide-2.webp";
 import SlideImageFour from "./../../../asset/slide/slide-3.webp";
