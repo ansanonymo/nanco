@@ -1,13 +1,14 @@
+import React from "react";
 import BreadCrumbLine from "./BreadCrumbLine";
 
 export default function BreadCrumb({ path, title, pageName }) {
   const fullPath = path.map(({ name, link }, index) => {
     return index !== path.length - 1 ? (
-      <a href={link} className="text-white">
+      <a key={crypto.randomUUID()} href={link} className="text-white">
         {name}
       </a>
     ) : (
-      <>{name}</>
+      <React.Fragment key={crypto.randomUUID}>{name}</React.Fragment>
     );
   });
 
