@@ -88,7 +88,7 @@ export default function Footer() {
 
 function FooterList({ link: { heading, links } }) {
   return (
-    <div className="md:col-span-4 lg:col-span-3 col-span-6">
+    <div className="lg:col-span-3 col-span-6">
       <p className="font-medium text-gray-900 uppercase">{heading}</p>
 
       <ul className="mt-6 space-y-4 text-sm">
