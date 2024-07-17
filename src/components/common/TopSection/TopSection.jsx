@@ -7,11 +7,14 @@ const breadData = {
   path: "Home 1 / Contact Us",
 };
 
+const imageUrl =
+  "https://raw.githubusercontent.com/ansanonymo/nanco/tazri/src/asset/breadcrumb/breadcrumb.jpg";
+
 export default function TopSection() {
   return (
     <div
       style={{
-        backgroundImage: 'url("/src/asset/breadcrumb/breadcrumb.jpg")',
+        backgroundImage: `url(${imageUrl})`,
       }}
       className="bg-center flex flex-col gap-20 pb-9"
     >
