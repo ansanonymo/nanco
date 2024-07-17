@@ -1,12 +1,13 @@
 import React from "react";
 // import HomePage from "./pages/HomePage";
-import OtherPage from "./pages/OtherPage";
+import HomeServicesSection from "./components/home/services/HomeServicesSection";
 
 function App() {
   return (
     <>
       {/* <HomePage /> */}
-      <OtherPage />
+      {/* <OtherPage /> */}
+      <HomeServicesSection />
     </>
   );
 }

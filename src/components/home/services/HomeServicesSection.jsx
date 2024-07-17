@@ -1,22 +1,22 @@
 import { LiaCitySolid } from "react-icons/lia";
-import Title from "../../common/Title/Title";
 
 export default function HomeServicesSection() {
   return (
-    <div>
-      <Title>Our Services</Title>
-      <div className="container flex w-fit gap-6 flex-col md:flex-row ">
-        <Card>Construction and Engineering</Card>
-        <Card>Intigrated Facilities-Oman</Card>
-        <Card>MEPI</Card>
+    <>
+      <div>
+        <div className="container mx-auto my-5 flex w-fit gap-6 flex-col md:flex-row">
+          <Card>Construction and Engineering</Card>
+          <Card>Intigrated Facilities-Oman</Card>
+          <Card>MEPI</Card>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
 function Card({ children, Icon }) {
   return (
-    <div className="relative w-80 md:w-60 lg:w-80 aspect-square mx-auto flex flex-col gap-3 border justify-center items-start py-20 px-8 rounded-lg shadow-xl border-gray-200 overflow-hidden group">
+    <div className="relative w-80 md:w-72 aspect-square mx-auto flex flex-col gap-3 border justify-center items-start py-20 px-8 rounded-lg shadow-xl border-gray-200 overflow-hidden group">
       <span className="text-7xl text-secondary group-hover:text-white self-start duration-500">
         {Icon ? Icon : <LiaCitySolid />}
       </span>
