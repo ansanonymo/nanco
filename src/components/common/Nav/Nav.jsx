@@ -133,7 +133,7 @@ function DrawerItem({ links }) {
       key: crypto.randomUUID(),
       label: (
         <a className="text-primary" href={link.link}>
-          {link.item}
+          <span className="text-primary">{link.item}</span>
         </a>
       ),
     };
