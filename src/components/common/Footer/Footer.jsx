@@ -72,7 +72,7 @@ export default function Footer() {
           <img src={BlackLogo} className="h-12" />
         </div>
         <div className=" ">
-          <div className=" grid md:gap-10 gap-9 grid-cols-12 lg:gap-8 container">
+          <div className=" grid md:gap-10 gap-9 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 container">
             {links.map((link) => {
               return <FooterList key={crypto.randomUUID()} link={link} />;
             })}
@@ -88,7 +88,7 @@ export default function Footer() {
 
 function FooterList({ link: { heading, links } }) {
   return (
-    <div className="lg:col-span-3 col-span-6">
+    <div className="">
       <p className="font-medium text-gray-900 uppercase">{heading}</p>
 
       <ul className="mt-6 space-y-4 text-sm">

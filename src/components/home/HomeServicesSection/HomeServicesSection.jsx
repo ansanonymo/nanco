@@ -3,8 +3,8 @@ import { LiaCitySolid } from "react-icons/lia";
 export default function HomeServicesSection() {
   return (
     <>
-      <div>
-        <div className="container mx-auto my-5 flex w-fit gap-6 flex-col md:flex-row">
+      <div className="container ">
+        <div className="my-5 justify-center content-start md:flex md:flex-wrap md:my-0 md:gap-6 ">
           <Card>Construction and Engineering</Card>
           <Card>Intigrated Facilities-Oman</Card>
           <Card>MEPI</Card>
@@ -16,7 +16,7 @@ export default function HomeServicesSection() {
 
 function Card({ children, Icon }) {
   return (
-    <div className="relative w-80 md:w-72 aspect-square mx-auto flex flex-col gap-3 border justify-center items-start py-20 px-8 rounded-lg shadow-xl border-gray-200 overflow-hidden group">
+    <div className="relative self-start my-9 md:my-0 mx-auto md:mr-auto md:mx-0 w-80 md:w-72 aspect-square flex flex-col gap-3 border justify-center items-start py-20 px-8 rounded-lg shadow-xl border-gray-200 overflow-hidden group">
       <span className="text-7xl text-secondary group-hover:text-white self-start duration-500">
         {Icon ? Icon : <LiaCitySolid />}
       </span>

@@ -6,8 +6,10 @@ export default function MdMassage({ isMd = false, image, who, quotes }) {
   return (
     <div
       className={`  ${
-        isMd ? "lg:grid-cols-[60%,40%]" : "lg:grid-cols-[40%,60%]"
-      }  grid  grid-cols-1 justify-center`}
+        isMd
+          ? "lg:grid-cols-[60%,40%] md:grid-cols-[60%,40%]"
+          : "lg:grid-cols-[40%,60%] md:grid-cols-[60%,40%]"
+      }  grid  grid-cols-1 justify-center `}
     >
       <div
         className={`imageBox ${

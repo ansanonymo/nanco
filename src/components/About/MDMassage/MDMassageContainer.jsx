@@ -4,8 +4,8 @@ import image from "./../../../asset/About/md.jpg";
 import MdMassage from "./MdMassage";
 export default function MDMassageContainer() {
   return (
-    <div className="w-full max-w-7xl mx-auto">
-      <div className="container">
+    <div className="w-full mx-auto">
+      <div className="container flex justify-center flex-col">
         <MdMassage
           image={image}
           who={"MD"}
