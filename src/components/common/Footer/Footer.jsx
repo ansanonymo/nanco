@@ -1,4 +1,5 @@
 import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
+import BlackLogo from "./../../../asset/nanco-logo-black.png";
 
 const links = [
   {
@@ -66,9 +67,12 @@ const links = [
 export default function Footer() {
   return (
     <footer className="bg-white mt-10 border-t">
-      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="lg:flex lg:items-start lg:gap-8 ">
-          <div className="mt-8 grid md:gap-10 gap-9 grid-cols-12 lg:gap-8 container">
+      <div className=" mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="container">
+          <img src={BlackLogo} className="h-12" />
+        </div>
+        <div className=" ">
+          <div className=" grid md:gap-10 gap-9 grid-cols-12 lg:gap-8 container">
             {links.map((link) => {
               return <FooterList key={crypto.randomUUID()} link={link} />;
             })}
