@@ -1,14 +1,16 @@
 import BreadCrumbLine from "./BreadCrumbLine";
 
 export default function BreadCrumb({ path, title, pageName }) {
-  const pathArr = path.split("/");
-  const lastPart = pathArr.pop();
+  const fullPath = path.map(({ name, link }, index) => {
+    return index !== path.length - 1 ? (
+      <a href={link} className="text-white">
+        {name}
+      </a>
+    ) : (
+      <>{name}</>
+    );
+  });
 
-  const fullPath = (
-    <>
-      <span className="text-[#00ddff]">{pathArr.join("/")} / </span> {lastPart}
-    </>
-  );
   return (
     <div className="container gap-10  bg-no-repeat  flex flex-col lg:flex-row lg:justify-between lg:gap-0 items-center">
       <div>
@@ -25,7 +27,7 @@ export default function BreadCrumb({ path, title, pageName }) {
           </p>
         </div>
       </div>
-      <div className="text-white relative">
+      <div className="text-[#00ddff] relative">
         <div className="w-[30px] hidden lg:block aspect-square absolute bg-white right-0 top-0 -translate-y-20">
           <div className="w-full h-full bg-primary -translate-x-1/3 -translate-y-1/3"></div>
         </div>

@@ -3,7 +3,20 @@ import BreadCrumb from "./../BreadCrumb/BreadCrumb";
 const breadData = {
   pageName: "Contact Us",
   title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-  path: "Home 1 / Contact Us",
+  path: [
+    {
+      name: "/about",
+      link: "#",
+    },
+    {
+      name: "/md",
+      link: "#",
+    },
+    {
+      name: "/test",
+      link: "#",
+    },
+  ],
 };
 
 const imageUrl =
