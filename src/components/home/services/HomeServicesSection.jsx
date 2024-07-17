@@ -5,11 +5,10 @@ export default function HomeServicesSection() {
   return (
     <div>
       <Title>Our Services</Title>
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-3">
+      <div className="container flex w-fit gap-6 flex-col lg:flex-row flex-wrap">
         <Card>Construction and Engineering</Card>
         <Card>Intigrated Facilities-Oman</Card>
         <Card>MEPI</Card>
-        <Card>Construction and Engineering</Card>
       </div>
     </div>
   );
@@ -17,7 +16,7 @@ export default function HomeServicesSection() {
 
 function Card({ children, Icon }) {
   return (
-    <div className="relative w-full max-w-[300px] h-80 mx-auto flex flex-col gap-3 border justify-center items-start py-20 px-8 rounded-lg shadow-xl border-gray-200 overflow-hidden group">
+    <div className="relative w-80 h-80 mx-auto flex flex-col gap-3 border justify-center items-start py-20 px-8 rounded-lg shadow-xl border-gray-200 overflow-hidden group">
       <span className="text-7xl text-secondary group-hover:text-white self-start duration-500">
         {Icon ? Icon : <LiaCitySolid />}
       </span>

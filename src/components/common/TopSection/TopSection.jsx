@@ -1,5 +1,4 @@
 import BreadCrumb from "./../BreadCrumb/BreadCrumb";
-import Nav from "./../Nav/Nav";
 
 const breadData = {
   pageName: "Contact Us",
@@ -16,9 +15,8 @@ export default function TopSection() {
       style={{
         backgroundImage: `url(${imageUrl})`,
       }}
-      className="bg-center flex flex-col gap-20 pb-9"
+      className="bg-center flex flex-col bg-no-repeat bg-cover gap-20 h-96 lg:h-[450px] justify-center items-center"
     >
-      <Nav />
       <BreadCrumb
         pageName={breadData.pageName}
         title={breadData.title}

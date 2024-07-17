@@ -82,13 +82,16 @@ const Nav = () => {
     };
   }, []);
 
-  const relativeCss =
-    "transition-all duration-500 transition relative z-50 w-full text-white";
-  const fixedCss =
-    "transition-all duration-500 fixed bg-white text-black z-50 w-full shadow-xl";
+  const relativeCss = " bg-transparent text-white ";
+  const fixedCss = "bg-white text-black  shadow-xl ";
 
   return (
-    <div ref={navRaf} className={isDown ? fixedCss : relativeCss}>
+    <div
+      ref={navRaf}
+      className={`transition-all z-50 w-full duration-500 fixed ${
+        isDown ? fixedCss : relativeCss
+      }`}
+    >
       <div className="lg:block py-2 container">
         <div className="max-w-7xl mx-auto flex flex-row justify-between items-center p-3 relative">
           <div className="w-[60px]">

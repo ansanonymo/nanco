@@ -10,7 +10,7 @@ export default function BreadCrumb({ path, title, pageName }) {
     </>
   );
   return (
-    <div className="container gap-10 lg:pb-0 bg-no-repeat pb-14  flex flex-col lg:flex-row lg:justify-between lg:gap-0 items-center">
+    <div className="container gap-10  bg-no-repeat  flex flex-col lg:flex-row lg:justify-between lg:gap-0 items-center">
       <div>
         <h1 className="md:text-5xl lg:text-6xl text-4xl font-semibold text-white">
           {pageName ? pageName : "Please Give Page Name"}
