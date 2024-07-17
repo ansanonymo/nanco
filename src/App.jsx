@@ -1,12 +1,12 @@
 import React from "react";
-import HomePage from "./pages/HomePage";
-// import OtherPage from "./pages/OtherPage";
+// import HomePage from "./pages/HomePage";
+import OtherPage from "./pages/OtherPage";
 
 function App() {
   return (
     <>
-      <HomePage />
-      {/* <OtherPage /> */}
+      {/* <HomePage /> */}
+      <OtherPage />
     </>
   );
 }
