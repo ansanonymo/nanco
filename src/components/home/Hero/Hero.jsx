@@ -27,12 +27,12 @@ export default function Hero() {
 function HeroContent() {
   return (
     <div className="text-white capitalize flex flex-col gap-6 items-start">
-      <h1 className="text-6xl font-semibold">
+      <h1 className="text-3xl md:text-4xl lg:text-6xl font-semibold">
         Affordable roofing repair <br />
         <span className="text-secondary">services</span>
       </h1>
 
-      <p className="text-xl">
+      <p className="text-xl w-4/5">
         OUR CONSISTENT PERFORMANCE AND IMPECCABLE SERVICE DELIVERY HAVE MADE US
       </p>
 
