@@ -68,7 +68,7 @@ const Nav = () => {
     const nav = navRaf.current;
 
     const listener = window.addEventListener("scroll", (e) => {
-      if (window.scrollY > 340) {
+      if (window.scrollY > 410) {
         setLogo("black");
         setIsDown(true);
       } else {

@@ -6,12 +6,11 @@ export default function BreadCrumb({ path, title, pageName }) {
 
   const fullPath = (
     <>
-      <span className="text-['#00ddff']">{pathArr.join("/")} / </span>{" "}
-      {lastPart}
+      <span className="text-[#00ddff]">{pathArr.join("/")} / </span> {lastPart}
     </>
   );
   return (
-    <div className="container gap-10 md:pb-0 bg-no-repeat pb-14 md:gap-0 flex flex-col md:flex-row md:justify-between items-center">
+    <div className="container gap-10 sm:gap-10 md:pb-0 bg-no-repeat pb-14 md:gap-0 flex flex-col sm:flex-col md:flex-row md:justify-between items-center">
       <div>
         <h1 className="md:text-5xl lg:text-6xl text-4xl font-semibold text-white">
           {pageName ? pageName : "Please Give Page Name"}
