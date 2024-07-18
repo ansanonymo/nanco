@@ -1,5 +1,4 @@
 import "swiper/css";
-import Nav from "../../common/Nav/Nav";
 import SlideImageTwo from "./../../../asset/slide/slide-1.webp";
 import SlideImageThree from "./../../../asset/slide/slide-2.webp";
 import SlideImageFour from "./../../../asset/slide/slide-3.webp";
@@ -11,10 +10,9 @@ const images = [SlideImageOne, SlideImageTwo, SlideImageThree, SlideImageFour];
 
 export default function Hero() {
   return (
-    <div className="relative flex flex-col">
+    <div className="relative h-[600px] flex flex-col">
       <Slider images={images} />
-      <Nav />
-      <div className="relative py-24 z-10 flex h-full justify-center lg:justify-between lg:flex-row container pointer-events-none flex-col pr-11 items-center ">
+      <div className="relative z-10 flex h-full justify-center lg:justify-between lg:flex-row container pointer-events-none flex-col pr-11 items-center ">
         {/* //text */}
         <HeroContent />
         {/* // img */}
@@ -27,12 +25,12 @@ export default function Hero() {
 function HeroContent() {
   return (
     <div className="text-white capitalize flex flex-col gap-6 items-start">
-      <h1 className="text-3xl md:text-4xl lg:text-6xl font-semibold">
+      <h1 className="text-3xl pointer-events-auto md:text-4xl lg:text-6xl font-semibold">
         Affordable roofing repair <br />
         <span className="text-secondary">services</span>
       </h1>
 
-      <p className="text-xl w-4/5">
+      <p className="text-xl w-4/5 pointer-events-auto">
         OUR CONSISTENT PERFORMANCE AND IMPECCABLE SERVICE DELIVERY HAVE MADE US
       </p>
 
@@ -45,7 +43,7 @@ function HeroContent() {
 
 function ImageCard({ imageSrc }) {
   return (
-    <div className=" pointer-events-auto relative translate-y-20 lg:translate-y-56 self-end  w-full max-w-[250px] text-white gap-4  bg-primary rounded-lg flex flex-col items-center pb-8">
+    <div className="hidden lg:flex pointer-events-auto relative translate-y-20 lg:translate-y-56 self-end  w-full max-w-[250px] text-white gap-4  bg-primary rounded-lg flex-col items-center pb-8">
       <div className="absolute top-0 translate-y-[-50%] h-40 w-40 rounded-full overflow-hidden border-4 border-primary ">
         <img className="w-full" src={imageSrc} alt="chairman image" />
       </div>

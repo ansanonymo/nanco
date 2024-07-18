@@ -1,10 +1,12 @@
 import { LiaCitySolid } from "react-icons/lia";
+import Title from "./../../common/Title/Title";
 
 export default function HomeServicesSection() {
   return (
     <>
-      <div className="container ">
-        <div className="my-5 justify-center content-start md:flex md:flex-wrap md:my-0 md:gap-6 ">
+      <div className="container mt-16">
+        <Title>Our Services</Title>
+        <div className="my-5 w-fit mx-auto md:grid md:grid-cols-2 md:my-0 md:gap-9 lg:flex">
           <Card>Construction and Engineering</Card>
           <Card>Intigrated Facilities-Oman</Card>
           <Card>MEPI</Card>
