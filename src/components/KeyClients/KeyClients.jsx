@@ -7,9 +7,12 @@ import client3 from "@/asset/clients/client-3.jpg";
 import client4 from "@/asset/clients/client-4.png";
 import client5 from "@/asset/clients/client-5.jpeg";
 
-const images = [client1, client2, client3, client4, client5];
+const defaultImages = [client1, client2, client3, client4, client5];
 
-export default function KeyCilents() {
+export default function KeyCilents({ images: imagesProps }) {
+  const images =
+    imagesProps && imagesProps.length ? imagesProps : defaultImages;
+
   return (
     <>
       <Title>Our Clients</Title>
