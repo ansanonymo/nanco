@@ -1,4 +1,5 @@
 import MDMassageContainer from "../components/About/MDMassage/MDMassageContainer";
+import BusinessLineSection from "../components/BuissnessLines/BusinessLineSection/BusinessLineSection";
 import Footer from "./../components/common/Footer/Footer";
 import Nav from "./../components/common/Nav/Nav";
 import TopSection from "./../components/common/TopSection/TopSection";
@@ -10,6 +11,7 @@ export default function OtherPage() {
       <Nav />
       <TopSection />
       <MDMassageContainer />
+      <BusinessLineSection />
       <HomeServicesSection />
       <Footer />
     </>
