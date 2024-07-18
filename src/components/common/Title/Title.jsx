@@ -1,4 +1,5 @@
-import LineImage from "./../../../asset/lines/line.webp";
+import LineImage from "@/asset/lines/line.webp";
+import Image from "next/image";
 export default function Title({ children }) {
   let words = children;
   if (!children || !children.trim() || words.split(" ").length !== 2) {
@@ -10,7 +11,13 @@ export default function Title({ children }) {
       <h1 className="uppercase">
         {wordOne} <span className="text-primary">{wordTwo}</span>
       </h1>
-      <img src={LineImage} alt="line" className="w-60" />
+      <Image
+        height={500}
+        width={500}
+        src={LineImage}
+        alt="line"
+        className="w-60 h-auto"
+      />
     </div>
   );
 }
