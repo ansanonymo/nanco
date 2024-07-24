@@ -11,6 +11,7 @@ import client2 from "@/asset/clients/client-2.png";
 import client3 from "@/asset/clients/client-3.jpg";
 import client4 from "@/asset/clients/client-4.png";
 import client5 from "@/asset/clients/client-5.jpeg";
+import HomeClientsSection from "@/components/home/HomeClientsSection/HomeClientsSection";
 
 const imagesForClientPage = [
   client1,
@@ -38,6 +39,7 @@ export default function Home() {
       {/* <HomeClientsSection /> */}
       <ProjectCouter />
       <KeyCilents images={imagesForClientPage} />
+      <HomeClientsSection />
     </>
   );
 }

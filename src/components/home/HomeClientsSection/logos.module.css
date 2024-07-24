@@ -1,5 +1,9 @@
+.parent:hover .slideanimation {
+  animation-play-state: paused;
+}
+
 .slideanimation {
-  animation: slide 20s linear infinite;
+  animation: logoslide 20s linear infinite;
 }
 
 @keyframes logoslide {

@@ -30,7 +30,7 @@ export default function KeyCilents({ images: imagesProps }) {
 
 function ClientLogoImage({ src }) {
   return (
-    <div className="border w-full h-full flex items-center justify-center p-8">
+    <div className="border w-full h-full flex items-center justify-center">
       <div className="size-56 md:size-80 justify-center items-center flex">
         <div className="relative cursor-pointer group overflow-hidden  h-ful w-full ">
           <div className="relative w-full h-full duration-300 group-hover:-translate-y-[100%] flex justify-center item ">
