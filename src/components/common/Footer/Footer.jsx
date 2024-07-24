@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
 import BlackLogo from "./../../../asset/nanco-logo-black.png";
 
@@ -69,7 +70,12 @@ export default function Footer() {
     <footer className="bg-white mt-10 border-t">
       <div className=" mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="container">
-          <img src={BlackLogo} className="h-12" />
+          <Image
+            width={1000}
+            height={1000}
+            src={BlackLogo}
+            className="w-32 object-fit"
+          />
         </div>
         <div className=" ">
           <div className=" grid md:gap-10 gap-9 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 container">
