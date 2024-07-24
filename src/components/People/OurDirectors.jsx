@@ -18,6 +18,7 @@ export default function OurDirectors() {
                     </div>
                 </div>
                 <PeopleCard
+                    key={crypto.randomUUID()}
                     image={image}
                     name={"MD Shariful Islam"}
                     title={"CEO"}
@@ -44,6 +45,7 @@ export default function OurDirectors() {
 
                 />
                 <PeopleCard
+                    key={crypto.randomUUID()}
                     image={image2}
                     name={"Md Tazriullah Buiyan"}
                     title={"Managing Director"}
@@ -77,7 +79,8 @@ export default function OurDirectors() {
                 <hr className=' bg-darkShade mb-5' />
                 <div className="con  grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 justify-center">
      
-                <PeopleCard
+                    <PeopleCard
+                    key={crypto.randomUUID()}
                     image={image}
                     name={"MD Shariful Islam"}
                     title={"Managing Director"}
@@ -103,7 +106,8 @@ export default function OurDirectors() {
                     ]}
 
                 />
-                <PeopleCard
+                    <PeopleCard
+                    key={crypto.randomUUID()}
                     image={image}
                     name={"MD Shariful Islam"}
                     title={"Managing Director"}
@@ -129,7 +133,8 @@ export default function OurDirectors() {
                     ]}
 
                 />
-                <PeopleCard
+                    <PeopleCard
+                    key={crypto.randomUUID()}
                     image={image}
                     name={"MD Shariful Islam"}
                     title={"Managing Director"}
@@ -155,7 +160,8 @@ export default function OurDirectors() {
                     ]}
 
                 />
-                <PeopleCard
+                    <PeopleCard
+                    key={crypto.randomUUID()}
                     image={image}
                     name={"MD Shariful Islam"}
                     title={"Managing Director"}
