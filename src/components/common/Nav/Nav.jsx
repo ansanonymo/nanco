@@ -5,14 +5,12 @@
 "use client";
 import { IoMenuOutline } from "react-icons/io5";
 
+import LogoBlack from "@/asset/nanco-logo-black.png";
+import LogoWhite from "@/asset/nanco-logo-white.png";
 import { Drawer, Menu } from "antd";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
-
-const LogoBlack =
-  "https://raw.githubusercontent.com/ansanonymo/nanco/master/src/asset/nanco-logo-black.png";
-const LogoWhite =
-  "https://raw.githubusercontent.com/ansanonymo/nanco/master/src/asset/nanco-logo-white.png";
 
 const menu = [
   {
@@ -98,8 +96,11 @@ const Nav = () => {
     >
       <div className="lg:block py-2 container">
         <div className="max-w-7xl mx-auto flex flex-row justify-between items-center p-3 relative">
-          <div className="w-[60px]">
-            <img
+          <div className="w-24">
+            <Image
+              width={1000}
+              height={1000}
+              alt="logo"
               src={logo === "white" ? LogoWhite : LogoBlack}
               className="w-full"
             />
