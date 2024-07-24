@@ -1,19 +1,11 @@
-import MDMassageContainer from "../components/About/MDMassage/MDMassageContainer";
-import BusinessLineSection from "../components/BuissnessLines/BusinessLineSection/BusinessLineSection";
-import Footer from "./../components/common/Footer/Footer";
-import Nav from "./../components/common/Nav/Nav";
-import TopSection from "./../components/common/TopSection/TopSection";
-import HomeServicesSection from "./../components/home/HomeServicesSection/HomeServicesSection";
+import MainContainer from "../components/BuissnessLines/Container/MainContainer";
+import ServicesContainer from "../components/BuissnessLines/ServicesContainer";
 
 export default function OtherPage() {
   return (
     <>
-      <Nav />
-      <TopSection />
-      <MDMassageContainer />
-      <BusinessLineSection />
-      <HomeServicesSection />
-      <Footer />
+      <ServicesContainer />
+      <MainContainer />
     </>
   );
 }
