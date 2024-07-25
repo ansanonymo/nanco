@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Peoples from "./pages/Peoples";
 
 function App() {
-  return <Contact/>;
+  return <Home/>;
 }
 
 export default App;

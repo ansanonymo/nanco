@@ -1,30 +1,46 @@
 import React from 'react'
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
-import girlIamge from "../../asset/About/girl.png"
-import bg from "../../asset/About/bg.png"
+import truckImage from "../../asset/About/Truck.jpg"
+import IconBox from './HomeAbout/IconBox'
+import { BsTools } from 'react-icons/bs'
+import { TbToolsKitchen2 } from "react-icons/tb";
 export default function HomeAbout() {
   return (
-    <div className='w-full mx-auto relative max-w-7xl bg-primary bg-cover' style={{backgroundImage:`url(${bg})`}}>
-      <div className="container  flex flex-col lg:flex-row lg:justify-between md:justify-between justify-center lg:place-items-end md:place-items-end">
-        <div className="textBox lg:py-20 md:py-20 py-10 w-full">
-          <h1 className=' text-4xl lg:text-6xl md:text-5xl font-bold text-white py-5 '>
-            Let's bulid something great
-            together!
-          </h1>
-          <p className='text-xl text-white pb-10'>Don't wait any longer to bring your construction dreams to life. Partner with Builtup and experience unparalleled service and quality.</p>
-          <div className=''>
-            <button className='flex place-items-center gap-3 lg:px-12 relative lg:py-6 px-7 py-4 text-xl rounded-lg bg-transparent overflow-hidden hover:outline  after:-z-[1] z-10 transition-all duration-1000 after:hover:w-0 after:transition-all hover:outline-white after:duration-1000 after:hover:opacity-0 after:absolute after:w-full after:h-full after:top-0 after:left-0 after:bg-secondary after:border-secondary after:border-2 text-white '>
-              
-              Get Free Qutes <FaRegArrowAltCircleRight /> </button>
+    <div className="container">
+      <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 w-full h-full gap-6 justify-between'>
+        <div className="imgBox w-full h-full relative overflow-hidden group min-h-72 lg:min-h-0 md:min-h-0">
+          <div className="shade z-20 -rotate-45 absolute transition-all duration-1000 group-hover:translate-x-[50rem] group-hover:-translate-y-80 w-[30%] h-[200%] opacity-30 backdrop-blur-md shadow-lg shadow-white bg-white top-0 left-0 -translate-x-96">
+
           </div>
+          <img src={truckImage} className=' absolute w-full h-full object-cover transition-all duration-1000 group-hover:scale-110' alt="Truck Image" />
+
         </div>
-              <div className="imageBox   lg:flex h-full flex justify-end relative w-[100%] ">
-                
-                      <img src={girlIamge} alt="" className=' -mb-5' />
-                
-    
+        <div className="text w-full p-6">
+          <div className="small text-secondary">
+            About Us
+          </div>
+          <div className="heading lg:text-6xl text-3xl py-3 font-bold text-primary md:text-4xl">
+            We Are Specialized Solutions Building
+          </div>
+          <div className="p lg:text-xl text-sm flex flex-col gap-1 py-5 text-darkShade font-medium">
+            <p>Content Marketing Solutions: Engage, Inform, and Convert</p>
+            <p>Content Marketing Solutions: Engage, Inform, and Convert</p>
+          </div>
+          <div className="icon flex flex-col gap-5">
+            <IconBox icon={<BsTools />}
+              title={"Smart Analytics"}
+              desc={"Content Marketing printing Solutions: Engage, Inform, and Convert"}
+            />
+            <IconBox
+              icon={<TbToolsKitchen2 />}
+              title={"Prestige Construction"}
+              desc={"Content Marketing printing Solutions: Engage, Inform, and Convert"}
+
+            
+            />
+          </div>
         </div>
       </div>
     </div>
+
   )
 }
