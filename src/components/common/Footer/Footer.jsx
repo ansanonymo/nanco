@@ -69,7 +69,7 @@ export default function Footer() {
   return (
     <footer className="bg-white mt-10 border-t">
       <div className=" mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="container">
+        <div className="container mb-6">
           <Image
             width={1000}
             height={1000}
