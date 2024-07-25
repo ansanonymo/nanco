@@ -71,6 +71,7 @@ export default function Footer() {
       <div className=" mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="container mb-6">
           <Image
+            alt="nanco-black-logo"
             width={1000}
             height={1000}
             src={BlackLogo}
