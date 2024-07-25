@@ -1,14 +1,15 @@
 import React from "react";
+import BusinessLinesPage from "./pages/BuissnessLinesPage";
 // import BuissnessLines from "./pages/BuissnessLinesPage";
 // import HomePage from "./pages/HomePage";
-import OtherPage from "./pages/OtherPage";
+// import OtherPage from "./pages/OtherPage";
 
 function App() {
   return (
     <>
       {/* <HomePage /> */}
-      <OtherPage />
-      {/* <BuissnessLines /> */}
+      {/* <OtherPage /> */}
+      <BusinessLinesPage />
     </>
   );
 }
