@@ -6,11 +6,11 @@ export default function HeroContent() {
         <span className="text-secondary">services</span>
       </h1>
 
-      <p className="text-sm  md:text-xl w-4/5 pointer-events-auto">
+      <p className="text-sm  md:text-xl w-4/5 pointer-events-auto line-clamp-2">
         OUR CONSISTENT PERFORMANCE AND IMPECCABLE SERVICE DELIVERY HAVE MADE US
       </p>
 
-      <button className="bg-primary pointer-events-auto border-2 transition-all duration-200 border-primary hover:bg-[#036979] text-sm lg:text-lg px-2 py-1 md:px-3 md:py-2">
+      <button className="bg-primary pointer-events-auto border-2 transition-all duration-200 border-primary hover:bg-[#036979] text-sm lg:text-lg px-2 py-1 md:px-3 md:py-2 line-clamp-2">
         More About Us
       </button>
     </div>

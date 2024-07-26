@@ -53,6 +53,7 @@ function SlideImage({ src }) {
       <Image
         height={500}
         width={500}
+        alt="alt"
         className="h-28 object-contain"
         src={src}
       />

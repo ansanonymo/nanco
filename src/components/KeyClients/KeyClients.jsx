@@ -39,6 +39,7 @@ function ClientLogoImage({ src }) {
                 src={src}
                 height={500}
                 width={500}
+                alt="img"
                 className="w-40 h-auto object-contain"
                 alt="logo"
               />
