@@ -1,6 +1,5 @@
 // import NextSlider from "@/components/home/Hero/NextSlider";
 
-import KeyCilents from "@/components/KeyClients/KeyClients";
 import Nav from "@/components/common/Nav/Nav";
 import Hero from "@/components/home/Hero/Hero";
 import ProjectCouter from "@/components/home/ProjectCounter/ProjectCounter";
@@ -11,7 +10,7 @@ import client2 from "@/asset/clients/client-2.png";
 import client3 from "@/asset/clients/client-3.jpg";
 import client4 from "@/asset/clients/client-4.png";
 import client5 from "@/asset/clients/client-5.jpeg";
-import HomeClientsSection from "@/components/home/HomeClientsSection/HomeClientsSection";
+import ServiceSkeleton from "@/components/BuissnessLines/BusinessLineSection/ServiceSkeleton";
 
 const imagesForClientPage = [
   client1,
@@ -38,8 +37,13 @@ export default function Home() {
       <Hero />
       {/* <HomeClientsSection /> */}
       <ProjectCouter />
-      <KeyCilents images={imagesForClientPage} />
-      <HomeClientsSection />
+      <div className="container my-7 flex flex-row flex-wrap gap-4">
+        <ServiceSkeleton />
+        <ServiceSkeleton />
+        <ServiceSkeleton />
+      </div>
+      {/* <KeyCilents images={imagesForClientPage} /> */}
+      {/* <HomeClientsSection /> */}
     </>
   );
 }
