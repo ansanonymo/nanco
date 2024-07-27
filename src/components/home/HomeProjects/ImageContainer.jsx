@@ -17,13 +17,13 @@ export default function ImageContainer() {
                 <SmallImage image={project3} />
             </div>
             <div className=' flex flex-col justify-center place-items-center h-full lg:h-[calc(100%+10%)] gap-3'>
-                <SmallImage image={big1} />
-                <SmallImage image={big2} />
+                <SmallImage image={project3} big={true} />
+                <SmallImage image={big2} big={true} />
 
             </div>
             <div className=' grid col-span-2 lg:col-span-1 grid-cols-2 lg:grid-cols-1  justify-center place-items-center h-full gap-3'>
 
-                <SmallImage image={project4} />
+                <SmallImage image={big1} />
                 <SmallImage image={project5} />
                 <SmallImage image={project6} />
             </div>

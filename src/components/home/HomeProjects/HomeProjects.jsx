@@ -4,8 +4,8 @@ import ImageContainer from "./ImageContainer";
 
 export default function HomeProjects() {
   return (
-    <div className=" w-full">
-      <div className="container">
+    <div className=" w-full overflow-x-hidden">
+      <div className="container overflow-x-hidden">
         {/* <Title
                   first={"PRESTIGIOUS "}
                   last={"PROJECTS"}
