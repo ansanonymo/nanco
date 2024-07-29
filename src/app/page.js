@@ -10,6 +10,7 @@ import client2 from "@/asset/clients/client-2.png";
 import client3 from "@/asset/clients/client-3.jpg";
 import client4 from "@/asset/clients/client-4.png";
 import client5 from "@/asset/clients/client-5.jpeg";
+import ProjectSkeleton from "@/components/BuissnessLines/BusinessLineSection/ProjectSkeleton";
 import ServiceSkeleton from "@/components/BuissnessLines/BusinessLineSection/ServiceSkeleton";
 import HomeProjects from "@/components/home/HomeProjects/HomeProjects";
 
@@ -38,7 +39,15 @@ export default function Home() {
       <Hero />
       {/* <HomeClientsSection /> */}
       <ProjectCouter />
+      <h2 className="my-5 text-5xl text-center">Project Skeleton</h2>
       <div className="container my-7 flex flex-row flex-wrap gap-4">
+        <ProjectSkeleton />
+        <ProjectSkeleton />
+        <ProjectSkeleton />
+      </div>
+
+      <h2 className="my-5 text-5xl text-center">Service Skeleton</h2>
+      <div className="container flex flex-wrap gap-3">
         <ServiceSkeleton />
         <ServiceSkeleton />
         <ServiceSkeleton />
