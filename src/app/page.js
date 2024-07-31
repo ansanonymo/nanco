@@ -3,7 +3,6 @@
 import Nav from "@/components/common/Nav/Nav";
 import Hero from "@/components/home/Hero/Hero";
 import ProjectCouter from "@/components/home/ProjectCounter/ProjectCounter";
-// import HomeClientsSection from "@/components/home/HomeClientsSection/HomeClientsSection";
 
 import client1 from "@/asset/clients/client-1.png";
 import client2 from "@/asset/clients/client-2.png";
@@ -12,6 +11,7 @@ import client4 from "@/asset/clients/client-4.png";
 import client5 from "@/asset/clients/client-5.jpeg";
 import ProjectSkeleton from "@/components/BuissnessLines/BusinessLineSection/ProjectSkeleton";
 import ServiceSkeleton from "@/components/BuissnessLines/BusinessLineSection/ServiceSkeleton";
+import HomeDynamicClientsSection from "@/components/home/HomeDynamicClientsSection/HomeDynamicClientsSection";
 import HomeProjects from "@/components/home/HomeProjects/HomeProjects";
 
 const imagesForClientPage = [
@@ -52,8 +52,7 @@ export default function Home() {
         <ServiceSkeleton />
         <ServiceSkeleton />
       </div>
-      {/* <KeyCilents images={imagesForClientPage} /> */}
-      {/* <HomeClientsSection /> */}
+      <HomeDynamicClientsSection />
       <HomeProjects />
     </>
   );
