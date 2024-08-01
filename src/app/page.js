@@ -11,8 +11,11 @@ import client4 from "@/asset/clients/client-4.png";
 import client5 from "@/asset/clients/client-5.jpeg";
 import ProjectSkeleton from "@/components/BuissnessLines/BusinessLineSection/ProjectSkeleton";
 import ServiceSkeleton from "@/components/BuissnessLines/BusinessLineSection/ServiceSkeleton";
+import Footer from "@/components/common/Footer/Footer";
 import HomeDynamicClientsSection from "@/components/home/HomeDynamicClientsSection/HomeDynamicClientsSection";
 import HomeProjects from "@/components/home/HomeProjects/HomeProjects";
+import MultiSelect from "@/components/UIComponent/MultiSelect";
+import MultiSelectBad from "@/components/UIComponent/MultiSelectBad";
 
 const imagesForClientPage = [
   client1,
@@ -54,6 +57,12 @@ export default function Home() {
       </div>
       <HomeDynamicClientsSection />
       <HomeProjects />
+
+      <div className="border container  p-9 my-7 flex gap-3">
+        <MultiSelect />
+        <MultiSelectBad />
+      </div>
+      <Footer />
     </>
   );
 }
