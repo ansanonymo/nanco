@@ -1,5 +1,3 @@
-import Footer from "@/components/common/Footer/Footer";
-import TopSection from "@/components/common/TopSection/TopSection";
 import ProjectCarousel from "@/components/project/ProjectCarousel";
 import ProjectDescription from "@/components/project/ProjectDescription";
 import ProjectDetails from "@/components/project/ProjectDetails";
@@ -16,11 +14,9 @@ const data = {
 export default function ProjectPage() {
   return (
     <>
-      <TopSection />
       <ProjectCarousel />
       <ProjectDetails data={data} />
       <ProjectDescription />
-      <Footer />
     </>
   );
 }

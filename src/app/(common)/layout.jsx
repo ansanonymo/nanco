@@ -1,12 +1,11 @@
-import TimeLine from "@/components/About/TimeLine/TimeLine";
 import Footer from "@/components/common/Footer/Footer";
 import TopSection from "@/components/common/TopSection/TopSection";
 
-export default function JourneyPage() {
+export default function CommonLayout({ children }) {
   return (
     <>
       <TopSection />
-      <TimeLine />
+      {children}
       <Footer />
     </>
   );
