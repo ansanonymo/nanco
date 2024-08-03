@@ -1,3 +1,4 @@
+import Videos from "../components/Videos/Videos";
 import HomeAbout from "../components/home/HomeAbout/HomeAbout";
 import Footer from "./../components/common/Footer/Footer";
 import Nav from "./../components/common/Nav/Nav";
@@ -20,6 +21,7 @@ export default function HomePage() {
       <HomeProjects />
       {/* <HomeClientsSection /> */}
       {/* <HomeOurJourny /> */}
+      <Videos />
       <HomeContact />
       <Footer />
     </>
